@@ -11,4 +11,4 @@ after_success:
 - bash deploy.sh
 env:
   global:
-  - GH_REF: github.com/huanhaitan/huanhaitan.github.io.git
+  - GH_REF:git@github.com:huanhaitan/huanhaitan.github.io.git
