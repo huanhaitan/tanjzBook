@@ -1,0 +1,14 @@
+language: node_js
+node_js:
+- '5'
+branches:
+  only:
+  - master
+install: npm install -g gitbook-cli
+before_script: gitbook install
+script: gitbook build
+after_success:
+- bash deploy.sh
+env:
+  global:
+  - GH_REF: github.com/huanhaitan/huanhaitan.github.io.git
