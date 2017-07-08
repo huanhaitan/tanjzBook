@@ -38,5 +38,5 @@
 >
 > 2，系统配置发生改变的情况，可以在 **AndroidMenifest.xml** 中 对应的 **activity标签** 的中配置             **android:configChanges="orientation\|keyboardHidden\|screenSize"**， 在**旋转屏幕**或**键盘改变**时不让系统 重建Activity 并调用 onConfigurationChanged\(Configuration newConfig\) 方法，可以通过onConfigurationChanged 方法 处理 配置改变。系统配置如下
 
-![](/assets/153355_d4f416e2_121218.png)
+
 
