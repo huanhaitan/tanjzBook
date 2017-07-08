@@ -12,7 +12,7 @@
 >
 > 3，当打开的新Activity 采用透明主题时，当前的Activity 不会回调 onStop 方法
 >
-> 4，当前Activity打开新Activity时，旧Activity 会先执行onPause方法然后再打开新的Activity的onCreate,onStart,onResume在执行旧Activity的onStop。
+> 4，当前Activity打开新Activity时，旧Activity 会先执行onPause方法然后再打开新的Activity的onCreate,onStart,onResume后再执行旧Activity的onStop。
 
 **异常生命周期**
 
