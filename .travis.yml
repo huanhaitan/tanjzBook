@@ -11,4 +11,4 @@ after_success:
 - bash deploy.sh
 env:
   global:
-  - GH_REF:github.com/huanhaitan/tanjzBook.git
+  - GH_REF: github.com/huanhaitan/tanjzBook.git
