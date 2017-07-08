@@ -2,6 +2,8 @@
 
 一，**Android 生命周期**
 
+
+
 **知识要点**
 
 > 1，onStart ,onStop 可见不可交互,
@@ -22,17 +24,13 @@
 
 > 1，资源相关的_**系统配置**_发生改变导致Activty被杀死并重建。
 >
->       如：屏幕方向，键盘类型发生改变等。
+>  如：屏幕方向，键盘类型发生改变等。
 >
 > 2，资源内存不足导致的_**低优先级**_的Activity被杀死并重建。
 >
->        Activity优先级（从高到低）：
+> Activity优先级（从高到低）：
 >
->          1，前台Activity（可交互的Activity）。
->
->          2，可见不可交互的Activity（如弹出Dialog的Activity）。
->
->          3，后台Activity（如执行了onStop的Activty）
+> 1，前台Activity（可交互的Activity）。2，可见不可交互的Activity（如弹出Dialog的Activity）。3，后台Activity（如执行了onStop的Activty）
 
 **How** 如何解决Activity 异常情况下的 Activity状态？
 
