@@ -1,0 +1,21 @@
+{
+    "variables": {
+        "title": "幻海tan的博客",
+        "theme": "theme-gray",
+        "copyright": ""
+    },
+    "collapsible_menu":true,
+    "level_number":false,
+    "links": {
+        "gitbook": false,
+        "sharing": {
+            "all":false,
+            "vk": false,
+            "facebook": false,
+            "twitter": false,
+            "google": false,
+            "weibo": false
+        }
+ 
+    }
+}
