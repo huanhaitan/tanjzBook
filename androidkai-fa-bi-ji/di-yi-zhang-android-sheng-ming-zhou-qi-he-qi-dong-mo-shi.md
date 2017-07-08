@@ -2,9 +2,7 @@
 
 #### 一，Activity** 生命周期**
 
-
-
-**知识要点**
+![](/assets/2012050219053256.jpg)**知识要点**
 
 > 1，onStart ,onStop 可见不可交互,
 >
@@ -42,7 +40,19 @@
 >
 > 2，系统配置发生改变的情况，可以在 **AndroidMenifest.xml** 中 对应的 **activity标签** 的中配置             **android:configChanges="orientation\|keyboardHidden\|screenSize"**， 在**旋转屏幕**或**键盘改变**时不让系统 重建Activity 并调用 onConfigurationChanged\(Configuration newConfig\) 方法，可以通过onConfigurationChanged 方法 处理 配置改变。（[系统配置参考](https://git.oschina.net/aleung/Dev_Android/issues/1)）
 
-#### 二，Activity的启动模式
+#### 二，Activity的启动模式（LunchMode）
+
+**知识要点**
+
+> 1，任务栈
+
+1，**standard  标准模式**
+
+2，**singleTop 栈顶复用模式**
+
+3，**singleTask  栈内复用模式**
+
+4，**singleInstance 单例模式**
 
 
 
