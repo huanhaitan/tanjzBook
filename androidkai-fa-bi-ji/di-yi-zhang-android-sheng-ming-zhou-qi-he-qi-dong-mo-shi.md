@@ -46,13 +46,41 @@
 
 **知识要点**
 
-> 1，任务栈
+> 1，任务栈\([参考](http://blog.csdn.net/liuhe688/article/details/6761337)\)
 
-1，**standard  标准模式**
+1，standard  标准模式
 
-2，**singleTop 栈顶复用模式**
+> 每启动一次Activity都会创建一个新的实例。
 
-3，**singleTask  栈内复用模式**
+2，singleTop 栈顶复用模式
 
-4，**singleInstance 单例模式**
+> 如果新的Activity的实例已经位于**任务栈**的的**栈顶**，该Activity不会创建新的实例，但是会回调**onNewIntent**方法。
+
+3，singleTask  栈内复用模式
+
+> 如果新的Activity的实例已经存在于**任务栈**的**栈内**，该Activity不会创建新的实例，同时回调**onNewIntent**方法。并且会使**该Activity实例以上的**其他实例出栈（**clearTop**）。
+
+4，singleInstance 单例模式
+
+> Activity实例单独存在于一个任务栈中，Android 系统中有且只有一个该实例。
+
+**IntentFilter 的匹配规则**
+
+> Activity启动方式分为显示启动和隐式启动，**显示启动**需要明确的指定被启动对象的组件信息（包名，类名）。**隐式启动**需要根据IntentFilter 的过滤信息来启动。一个IntentFilter中的过滤信息有 **action**，**category**，**data。**一个Activity可以有多个intentfilter,只要Intent 能够其中一个intentfilter就可以启动Activity。
+
+action 
+
+> 一个Intentfilter中可以有多个action 。Intent中的action只要有一个与inentfilter中的一个action完全相同（区分大小写）就可以启动Activity。
+
+category
+
+> 一个Intentfilter中可以有多个category。如果被启动的Activity的intentfilter中的有category，那么Intent中的category必须与intentfilter中的每一个category相同。
+
+data
+
+> 一个Intentfilter中可以有多个data 。Intent中的data只要有一个与inentfilter中的一个data相同。
+
+
+
+
 
