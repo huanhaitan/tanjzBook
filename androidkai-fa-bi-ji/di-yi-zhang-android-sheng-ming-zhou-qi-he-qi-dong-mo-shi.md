@@ -68,7 +68,7 @@
 
 > Activity启动方式分为显示启动和隐式启动，**显示启动**需要明确的指定被启动对象的组件信息（包名，类名）。**隐式启动**需要根据IntentFilter 的过滤信息来启动。一个IntentFilter中的过滤信息有 **action**，**category**，**data。**一个Activity可以有多个intentfilter,只要Intent 能够其中一个intentfilter就可以启动Activity。
 
-action 
+action
 
 > 一个Intentfilter中可以有多个action 。Intent中的action只要有一个与inentfilter中的一个action完全相同（区分大小写）就可以启动Activity。
 
@@ -79,8 +79,6 @@ category
 data
 
 > 一个Intentfilter中可以有多个data 。Intent中的data只要有一个与inentfilter中的一个data相同。
-
-
 
 
 

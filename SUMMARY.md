@@ -9,4 +9,5 @@
 * [备注](bei-zhu.md)
 * Android 笔记
   * [Android  configChange和Activity生命周期](android-configchange-he-activity-sheng-ming-zhou-qi.md)
+  * [Android Binder 机制](android-binder-ji-zhi.md)
 
