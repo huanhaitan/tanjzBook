@@ -10,6 +10,5 @@
 * Android 笔记
   * [Android  configChange和Activity生命周期](android-configchange-he-activity-sheng-ming-zhou-qi.md)
   * [Android Binder 机制](android-binder-ji-zhi.md)
-
-
+  * [Android kotlin 笔记一](android-kotlin-bi-ji-yi.md)
 
